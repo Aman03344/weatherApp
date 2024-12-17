@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="media..css">
+</head>
+<body>
+  
+  
+    <div class="container">
+        <div class="letft-container">
+            <!-- Search Section -->
+            <div class="search-con">
+                <input type="text" class="input" placeholder="Search...">
+                <button class="btn" id="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </div>
+
+            <!-- Weather Card Section -->
+            <div class="img-card">
+                <div class="small-image">
+                    <img src="./save3-removebg-preview.png" id="image-icon" alt="Weather Icon">
+                    <p id="mint-title">Sunny</p>
+                    <h1 id="temp">29°C</h1>
+                    <span class="city">Indore,</span>
+                    <span id="country">India</span>
+                </div>
+            </div>
+
+            <!-- Weather Details Section -->
+            <div class="wth-history">
+                <div class="humidityBox">
+                    <h2 id="humidity">29%</h2>
+                    <span>Humidity</span>
+                </div>
+                <div class="humidity-img">
+                    <img src="./HumidityIcon.png" alt="Humidity Icon">
+                </div>
+            </div>
+
+            <div class="wth-history">
+                <div class="fahrenheitBox">
+                    <h2 id="fahrenheit">29°F</h2>
+                    <span>Fahrenheit</span>
+                </div>
+                <div class="fahrenheit-img">
+                    <img src="./fahrenheit-icon.png" alt="Fahrenheit Icon">
+                </div>
+            </div>
+
+            <div class="time">
+                <h1 id="localTime">
+                    12 : 00PM
+                </h1>
+            </div>
+        </div>
+
+        <!-- Right Container -->
+        <div class="right-container">
+
+            <div class="right-nav-bar">
+                <div class="loader">
+                    <p>Weather Details</p>
+                    <div class="words">
+                      <span class="word">Air Qaulity</span>
+                      <span class="word">Heat Index</span>
+                      <span class="word">UV rays</span>
+                      <span class="word">Tempature</span>
+                      <span class="word">Forcast</span>
+                    </div>
+                </div>
+
+                <div class="snowman-image">
+                    <img src="./snowman.png" alt="snowmanImage">
+                </div>
+
+            </div>
+
+
+
+            <div class="air-card">
+                <div class="small-air">
+                    <h3 id="co" >CO:20</h3>
+                    <hr >
+                    <img style="width: 25%;" src="./Co.png" alt="">
+                </div>
+                <div class="small-air">
+                    <h3 id="no">NO₂:20</h3>
+                    <hr >
+                    <img style="width: 25%;" src="./no2.png" alt="">
+                </div>
+                <div class="small-air">
+                    <h3 id="pm" >PM₂.₅:20</h3>
+                    <hr >
+                    <img style="width: 25%;" src="./pm10.png" alt="">
+                </div>
+                <div class="small-air">
+                    <h3 id="o3" > O₃:20</h3>
+                    <hr >
+                    <img style="width: 25%;" src="./o3.png" alt="">
+                </div>
+                <div class="small-air">
+                    <h3 id="so" >SO₂ :20</h3>
+                    <hr >
+                    <img style="width: 25%;" src="./foggy_weather_icon-removebg-preview.png" alt="">
+                </div>
+
+              
+            </div>
+
+            <div class="uv-con">
+
+                <div class="uvRay">
+                    <div class="uv-text-con">
+                        <div class="sun-image-con">
+                            <img id="uvImage" style="width: 40%;" src="./sun-uv.png" alt="">
+                            
+                        </div>
+                   <div class="innertext">
+                        <h1 id="uv">UV : 20.3</h1>
+                     
+                      <h4 id="heatC">Heat indx : 3°C</h4>
+                      <h4 id="heatF">Heat indx : 3°F</h4>
+                        
+                   </div>
+                       
+                        
+                </div>        
+                </div>
+
+               <div class="wind-container">
+           
+                    <div class="wind-D">
+                       <div class="wind-image">
+                        <img style="width: 35%;" src="./wind Icon.png" alt="">
+                      
+                        
+                       </div>
+                       <div class="wind-text">
+                        <h3>Wind</h3>
+                       <span id="dir">Direction : SE</span><br>
+                       <span id="kph">Kilometers per hour : 20</span><br>
+                       <span id="mph">Miles per hour : 29</span><br>
+                       </div>
+                       
+                    </div>
+
+                    <div class="wind-D">
+                        <div class="wind-image2">
+                            <img style="width: 45%;" src="./visibility.png" alt="">
+
+                        </div>
+
+                        <div class="wind-text2">
+                            <h3>visibility</h3>
+                            <span id="visKm">Kilometers : 29</span><br>
+                            <span id="visM"> Miles : 28</span><br>
+                          
+                           </div>
+                        
+
+                    </div>  
+              
+               </div>            
+
+            </div>
+             
+
+            <div class="time-container">
+              
+                <div class="region">
+                    <h1 id="region">Madhya Pradesh</h1>
+                </div>
+            </div>
+            
+           
+
+
+        </div>
+        
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
